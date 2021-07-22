@@ -1,3 +1,0 @@
-/Data/tianxya/Workspace/SelfLearning/C_PlusLearn/multi_thread/test_trhread/build/CMakeFiles/rebuild_cache.dir
-/Data/tianxya/Workspace/SelfLearning/C_PlusLearn/multi_thread/test_trhread/build/CMakeFiles/edit_cache.dir
-/Data/tianxya/Workspace/SelfLearning/C_PlusLearn/multi_thread/test_trhread/build/CMakeFiles/test_thread.dir
