@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-__global__ void hello_from_gpu()
-{
-    const int bid = blockIdx.x;
-    const int tid = threadIdx.x;
-    printf("girdm.x: %d ,blockdim.x: %d \n",gridDim.x - 1,blockDim.x - 1);
-    printf("Hello from block %d and thread %d\n", bid, tid);
+__global__ void hello_from_gpu() {
+  const int block_id = blockIdx.x;
+  const int thread_id = threadIdx.x;
+  printf("hello world from gpu , block id is %d ,thread id is %d \n", block_id,
+         thread_id);
 }
 
-int main(){
-    hello_from_gpu<<<5,6>>>();
-    cudaDeviceSynchronize();
-    return 0;
+int main() {
+  hello_from_gpu<<<3, 12>>>();
+  cudaDeviceSynchronize();
+  return 0;
 }

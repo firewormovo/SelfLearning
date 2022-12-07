@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.4.1)
+project(learn_queue)
+file(GLOB target_files "*learn.cpp")
+
+foreach(target_file ${target_files})
+    message(${target_file})
+    string(REGEX REPLACE "^[\/A-Za-z0-9_-]+\/\|.cpp" "" current_file ${target_file})
+    message(${current_file})
+    add_executable(${current_file} ${target_file})
+endforeach()
