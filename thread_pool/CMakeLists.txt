@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.10.0)
 project(test_thread_pool)
 
 set (CMAKE_CXX_FLAGS "--std=c++17")
+set(CMAKE_CXX_FLAGS -pthread)
+
 
 file(GLOB include_dir "${PROJECT_SOURCE_DIR}/*.h")
 
